@@ -1,3 +1,15 @@
+  // sublinks on mobile version
+  document.addEventListener("DOMContentLoaded", function() {
+    var dropdownToggle = document.querySelectorAll('.navbar-nav .dropdown-toggle');
+    dropdownToggle.forEach(function(toggle) {
+      toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        var parentDropdown = this.parentElement;
+        parentDropdown.classList.toggle('show');
+      });
+    });
+  });
+
 // JavaScript code for lazy loading
 document.addEventListener("DOMContentLoaded", function() {
     var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
@@ -19,4 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
+
+
   
