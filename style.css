@@ -52,9 +52,9 @@ html{
   font-size: 400;
 
 }
-@media (max-width: 767px) {
-  .navbar-nav {
-    text-align: center;
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 }
 

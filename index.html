@@ -12,18 +12,26 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="./images/kapturall-logo-black-240x96.png" alt="Logo">
+        <img src="./images/kapturall-logo-black-240x96.png" loading="lazy">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link blue-hover" href="#section1">Register</a>
+        <ul class="navbar-nav ml-auto text-center"> <!-- Add 'text-center' class here -->
+          <li class="nav-item dropdown">
+            <a class="nav-link blue-hover dropdown-toggle" href="#" id="registerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Register</a>
+            <div class="dropdown-menu" aria-labelledby="registerDropdown">
+              <a class="dropdown-item" href="#sub-link1">Sub Link 1</a>
+              <a class="dropdown-item" href="#sub-link2">Sub Link 2</a>
+            </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link blue-hover" href="#section2">About Us</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link blue-hover dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+            <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+              <a class="dropdown-item" href="#sub-link3">Sub Link 3</a>
+              <a class="dropdown-item" href="#sub-link4">Sub Link 4</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link blue-hover" href="#section3">Gallery</a>
@@ -32,6 +40,8 @@
       </div>
     </div>
   </nav>
+  
+  
   
 
   <!-- Page Content -->
@@ -44,33 +54,33 @@
 
   <section class="p-5 d-flex flex-column justify-content-center" id="section2">
     <h2 class="text-center title-two">Classes and leagues forming now</h2>
-    <p class="text-left p-5 paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus sit dolorum quas reiciendis eum neque provident dicta, quasi explicabo distinctio animi doloremque sapiente, eaque quos mollitia commodi. Dolorem temporibus necessitatibus veniam suscipit nesciunt repellendus dolores ut optio laboriosam impedit deserunt ad vel voluptates natus, similique consectetur est dolorum doloribus. </p>
+    <p class="text-left text-center-md paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti ducimus sit dolorum quas reiciendis eum neque provident dicta, quasi explicabo distinctio animi doloremque sapiente, eaque quos mollitia commodi. Dolorem temporibus necessitatibus veniam suscipit nesciunt repellendus dolores ut optio laboriosam impedit deserunt ad vel voluptates natus, similique consectetur est dolorum doloribus. </p>
     <section class="container">
       <div class="row">
         <div class="col-md-6 col-lg-3">
           <div class="photo">
-            <img src="./images/section2_img1.jpg" alt="Photo 1">
+            <img src="./images/placeholder.png" data-src="./images/section2_img1.jpg" alt="Photo 1" loading="lazy">
             <h3 class="title-three">Title 1</h3>
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="photo">
-            <img src="./images/section2_img2.jpg" alt="Photo 2">
+            <img class="lazy" src="./images/placeholder.png" data-src="./images/section2_img2.jpg" data-src="./images/section2_img2.jpg" alt="Photo 2" loading="lazy">
             <h3 class="title-three">Title 2</h3>
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="photo">
-            <img src="./images/section2_img3.jpg" alt="Photo 3">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section2_img3.jpg" alt="Photo 3" loading="lazy">
             <h3 class="title-three">Title 3</h3>
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="photo">
-            <img src="./images/section2_img4.jpg" alt="Photo 4">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section2_img4.jpg" alt="Photo 4" loading="lazy">
             <h3 class="title-three">Title 4</h3>
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
@@ -79,10 +89,10 @@
     </section>
   </section>
 
-  <section class="p-5 d-flex flex-column align-items-center" id="section3">
+  <section class="p-5 d-flex flex-column align-items-center" id="section3" >
     <div class="p-5 row justify-content-center">
       <div class="col-sm-12 col-md-6 col-lg-3 d-flex flex-column justify-content-center align-items-center">
-        <img src="./images/section3_img1.jpg" class="img-fluid" alt="Description of the image">
+        <img src="./images/placeholder.png" data-src="./images/section3_img1.jpg" class="img-fluid lazy" alt="Description of the image" loading="lazy">
       </div>
       <div class="col-sm-12 col-md-6 col-lg-6 d-flex flex-column justify-content-center align-items-center">
         <h2 class="text-center text-md-left title-two text-white">Madison Curling Club</h2>
@@ -104,32 +114,32 @@
       <div class="row">
         <div class="col-md-4">
           <div class="photo">
-            <img src="./images/section4_img1.jpg" alt="Photo 1">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section4_img1.jpg" alt="Photo 1" loading="lazy">
           </div>
         </div>
         <div class="col-md-4">
           <div class="photo">
-            <img src="./images/section4_img2.jpg" alt="Photo 2">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section4_img2.jpg" alt="Photo 2" loading="lazy">
           </div>
         </div>
         <div class="col-md-4">
           <div class="photo">
-            <img src="./images/section4_img3.jpg" alt="Photo 3">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section4_img3.jpg" alt="Photo 3" loading="lazy">
           </div>
         </div>
         <div class="col-md-4">
           <div class="photo">
-            <img src="./images/section4_img4.jpg" alt="Photo 4">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section4_img4.jpg" alt="Photo 4" loading="lazy">
           </div>
         </div>
         <div class="col-md-4">
           <div class="photo">
-            <img src="./images/section4_img5.jpg" alt="Photo 5">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section4_img5.jpg" alt="Photo 5" loading="lazy">
           </div>
         </div>
         <div class="col-md-4">
           <div class="photo">
-            <img src="./images/section4_img6.jpg" alt="Photo 6">
+            <img class="lazy" src="./images/placeholder.png"  data-src="./images/section4_img6.jpg" alt="Photo 6" loading="lazy">
           </div>
         </div>
         </div>
@@ -143,13 +153,13 @@
   </section>
 
   <footer class="d-flex flex-row justify-content-between align-items-center pl-4 pr-4">
-    <img class="footer-logo" src="./images/kapturall-logo-black-240x96.png" alt="Logo">
+    <img class="footer-logo" src="./images/kapturall-logo-black-240x96.png" alt="Logo" loading="lazy">
     <p class="footer-text">&#xA9; Madison Curling Club | infor@madisoncurlingclub.com</p>
   </footer>
   
   
   
-
+  <script src="app.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
